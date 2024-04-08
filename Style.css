@@ -1,3 +1,18 @@
 body{
-    background-color: darkslategray;
+   background-image: url(https://i.redd.it/8j3euqv0i2a01.jpg)
+}
+.Pamatlaukums{
+    background-color: darkslateblue;
+    width: 500px;
+    height: 500px;
+    border: 2px solid navy;
+    padding: 10px;
+    margin: left;
+}
+.cataZina{
+    background-color: blue;
+    height: 450px;
+    padding: 10px;
+    overflow: scroll; 
+    color: darkcyan;
 }
