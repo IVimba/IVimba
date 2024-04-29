@@ -1,8 +1,26 @@
-// console.log(1)
-function SutitZinu()
+//console.log(1)
+let zina = document.querySelector('.zina').value;
+let zinas = document.querySelector('.CataZina');
+function sutitZinu()
+
 {
-    console.log('SutitZinu()darbojas');
-    let zina = document.querySelector('zina');
-    let zinas = document.querySelector('CataZina');
-    zinas.innerHTML = zinas.innerHTML+'<br>'+zina.value;
+
+console.log('sutitZinu()darbojas');
+
+zinas.innerHTML = zinas.innerHTML+ '<br>'+zina.value;
+
+}
+
+async function ieladetChataZinas()
+
+{
+
+let datiNoServera = await fetch('chatazinas.txt');
+
+let dati =await datiNoServera.text;
+
+//console.log(dati);
+
+zinas.innerHTML = dati;
+
 }
